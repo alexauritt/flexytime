@@ -1,1 +1,33 @@
-@import "bourbon"
+@import "bourbon";
+
+$fg-max-columns: 12;
+$fg-column: 60px;
+$fg-gutter: 20px;
+
+body {
+  margin: 0 auto;
+  max-width: 1400px;
+  width: flex-grid(12);
+
+  #header {
+    background-color: yellow;
+    width: flex-grid(12);
+  }
+
+  #when-where {
+    background-color: green;
+    width: flex-grid(12);
+    
+    #when {
+      background-color: red;
+      width: flex-grid(7);
+    }
+    
+    #where {
+      background-color: blue;      
+      width: flex-grid(5);
+      float: left;
+    }
+  }
+}
+
