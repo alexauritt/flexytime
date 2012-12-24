@@ -1,4 +1,8 @@
 FlexBourbon::Application.routes.draw do
+  root :to => 'greets#index'
+  resources :greets
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
